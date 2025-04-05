@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lars Berling</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark-mode">
+<header>
+	<div class="header-content">
+		<!-- Night Mode Toggle Button -->
+		<button id="mode-toggle" aria-label="Toggle Night Mode" class="night-mode-btn">
+			<i class="fas fa-moon"></i>
+		</button>
+	</div>
+</header>
+
+<!-- Container for the left panel and right panel -->
+<div class="container">
+	<!-- Left Panel: Circular image and title -->
+	<div class="left-panel">
+		<img src="assets/images/PicLB.jpg" alt="Lars Berling" class="profile-image">
+		<h3>Lars Berling</h3>
+		<p class="subtitle">Postdoctoral Fellow</p> <!-- Subtitle -->
+
+		<ul class="left-panel-links">
+			<li><a href="https://www.sfu.ca" target="_blank">Simon Fraser University</a></li>
+			<li><a href="https://www.sfu.ca/magpie.html" target="_blank">MAGPIE Group</a></li>
+			<li><a href="https://www.sfu.ca/math/people/faculty/ccolijn/" target="_blank">Caroline Colijn</a></li>
+		</ul>
+		<!-- Social Links (Now Below the First List) -->
+		<div class="social-links">
+			<ul>
+				<li>
+					<a href="mailto:lars_berling@sfu.ca">
+						<i class="fas fa-envelope"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Lars-B" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://scholar.google.com/citations?user=YOUR_ID_HERE" target="_blank">
+						<i class="fas fa-graduation-cap"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://orcid.org/YOUR_ORCID_ID_HERE" target="_blank">
+						<i class="fab fa-orcid"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Right Panel: Content with tabs -->
+	<div class="right-panel">
+		<!-- Navigation for tabs -->
+		<nav>
+			<a href="#home" class="active">Home</a>
+			<a href="#publications">Publications</a>
+			<a href="#software">Software</a>
+			<a href="#talks">Talks</a>
+		</nav>
+
+		<!-- TODO Dark mode text color should be not white but lightgrey and be set by the button everywhere or implemented for all text related things? -->
+<!--		Todo in dark mode my name color is werid, generally find a better color for text in dark mode...-->
+		<!-- Home Section -->
+		<section id="home" class="tab-content active">
+			<!-- Top Section: Full width -->
+			<div class="top-section">
+				<h2>Welcome to my website!</h2>
+				<p>Thanks for stopping by. Take a look around and learn more about me and what I do.</p>
+				<p>
+					I develop methods and software in the area of phylogenetics.<br>
+					My work has focused on understanding distributions of phylogenetic time trees.<br>
+					A major goal of this work is to improve the way phylogenetic inference of trees is performed,<br>
+					particularly in the context of BEAST2 but applicable to all tree inference software.
+				</p>
+			</div>
+
+			<!-- Bottom Section: Two columns -->
+			<div class="bottom-section">
+				<!-- Left Column: Interests and Areas of Study -->
+				<div class="lcolumn" id="interests">
+					<h3>Interests and Areas of Study</h3>
+					<ul class="my-list">
+						<li>Phylogenetic trees and metrics</li>
+						<li>MCMC convergence assessment</li>
+						<li>Phylogenetic inference</li>
+						<li>Computational Biology</li>
+					</ul>
+				</div>
+
+				<!-- Right Column: Short CV -->
+				<div class="rcolumn" id="cv">
+					<h3>Short CV</h3>
+					<ul class="my-list">
+<!--						Todo add links to universities and biomaths, maybe thesis advisors and biods lab?-->
+						<li>Post-doctoral fellow, Magpie Group, Simon Fraser University, Canada (2025-...)</li>
+						<li>PhD, Mathematics, University of Canterbury, New Zealand (2021-2024)</li>
+						<li>Master of Science, Biomathematics, University of Greifswald, Germany (...-2021)</li>
+						<li>Bachelor of Science, Biomathematics, University of Greifswald, Germany (2014-2017)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="software" class="tab-content">
+			<!-- 	TODO the hover effect does not match the clickable link size, make it the same
+			 		TODO the icon is to far left and gets cut of when hovering
+			 -->
+			<h1> This is work in progress...</h1>
+<!--			<h2>Software</h2>-->
+<!--			<div class="software-list">-->
+<!--				<li class="software-item">-->
+<!--					<a href="https://github.com/your-github-repo" target="_blank" class="software-link">-->
+<!--						<i class="fab fa-github"></i> Beast2 (GitHub)-->
+<!--					</a>-->
+<!--				</li>-->
+<!--				<li class="software-item">-->
+<!--					<a href="https://beast2.example.com" target="_blank" class="software-link">-->
+<!--						<i class="fas fa-cogs"></i> BEAST2 (Official Website)-->
+<!--					</a>-->
+<!--				</li>-->
+<!--				&lt;!&ndash; Add more items here &ndash;&gt;-->
+<!--			</div>-->
+<!--			<h2>Tutorials</h2>-->
+<!--			<div class="software-list">-->
+<!--				<ul class="software-item">-->
+<!--					<a href="https://www.beast2.org/2025/02/25/CCD0-revisited.html" target="_blank" class="software-link">-->
+<!--						<i class="fa fa-pencil"></i> CCD0 revisited (BEAST2 Blog)-->
+<!--					</a>-->
+<!--				</ul>-->
+<!--				<ul class="software-item">-->
+<!--					<a href="https://www.beast2.org/2025/02/25/CCD0-revisited.html" target="_blank" class="software-link">-->
+<!--						<i class="fa fa-pencil"></i> CCD0 revisited (BEAST2 Blog)-->
+<!--					</a>-->
+<!--				</ul>-->
+<!--			</div>-->
+<!--			<h2>Other links</h2>-->
+<!--			<div class="software-list">-->
+<!--				<ul class="software-item">-->
+<!--					<a href="https://www.beast2.org/2025/02/25/CCD0-revisited.html" target="_blank" class="software-link">-->
+<!--						<i class="fa fa-pencil"></i> CCD0 revisited (BEAST2 Blog)-->
+<!--					</a>-->
+<!--				</ul>-->
+<!--				<ul class="software-item">-->
+<!--					<a href="https://www.beast2.org/2024/06/24/what-is-new-in-v2.7.7.html" target="_blank" class="software-link">-->
+<!--						<i class="fa fa-pencil"></i> CCD package recommended for TreeAnnotator with BEAST v2.7.7 (BEAST2 Blog)-->
+<!--					</a>-->
+<!--				</ul>-->
+<!--				<ul class="software-item">-->
+<!--					<a href="https://www.beast2.org/2024/08/01/automatic-stopping-mcmc.html" target="_blank" class="software-link">-->
+<!--						<i class="fas fa-pencil"></i> Automatic stopping MCMC (BEAST2 Blog)-->
+<!--					</a>-->
+<!--				</ul>-->
+<!--			</div>-->
+		</section>
+		<section id="publications" class="tab-content">
+			<h2>Publications</h2>
+			<div class="publication-list">
+				<ul id="publications-list">Loading publications...</ul>
+<!--				todo fix the scrolling thing where the last element of the list is cut off -->
+			</div>
+		</section>
+
+		<section id="talks" class="tab-content">
+			<h1> This is work in progress...</h1>
+			<!-- TODO Need to make this list look all nice and similar to the other ones -->
+<!--			<h2>Slides & PDFs</h2>-->
+<!--			<p>Here is a collection of talks I gave in the past:</p>-->
+<!--			<ul class="pdf-list">-->
+<!--				<li class="pdf-item" data-pdf="assets/pdfs/kaikoura.pdf">-->
+<!--					<a href="assets/pdfs/kaikoura.pdf" target="_blank" class="pdf-link">-->
+<!--						<div class="pdf-info">-->
+<!--							<i class="fas fa-file-pdf"></i> Slide 1: Title of Presentation 1-->
+<!--						</div>-->
+<!--					</a>-->
+<!--				</li>-->
+<!--				<li class="pdf-item" data-pdf="assets/pdfs/kaikoura.pdf">-->
+<!--					<a href="assets/pdfs/kaikoura.pdf" target="_blank" class="pdf-link">-->
+<!--						<div class="pdf-info">-->
+<!--							<i class="fas fa-file-pdf"></i> Slide 1: Title of Presentation 1-->
+<!--						</div>-->
+<!--					</a>-->
+<!--				</li>-->
+<!--				&lt;!&ndash; Add more items here &ndash;&gt;-->
+<!--			</ul>-->
+		</section>
+	</div>
+</div>
+
+<footer>
+	<p>&copy; 2025 Lars Berling. Powered by ChatGPT.</p>
+</footer>
+
+	<script src="js/orcid.js"></script>
+	<script src="js/control-tab-switch.js"></script>
+	<script src="js/night-mode.js"></script>
+</body>
+</html>
