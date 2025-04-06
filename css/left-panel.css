@@ -9,25 +9,11 @@
     transition: background-color 0.3s;
 }
 
-
 .left-panel h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
-
-
-/* Light mode styling (default) */
-body.light-mode .left-panel {
-    background-color: #fff; /* Light background */
-    color: #333; /* Dark text for readability */
-}
-
-/*!* Dark mode styling *!*/
-/*body.dark-mode .left-panel {*/
-/*  background-color: #121212; !* Dark background *!*/
-/*  color: #fff; !* White text for readability *!*/
-/*}*/
 
 .left-panel-links {
     list-style: none;

@@ -5,6 +5,9 @@
 @import url('./publications.css');
 @import url('./software.css');
 
+/* Todo try to use %/rem/vw/vh instead of px
+    For more mobile support I could add @media tags too...*/
+
 .main {
   margin-top: 50px;
   padding: 20px;
@@ -31,7 +34,23 @@ header {
 body {
   background-color: #121212; /* Dark background */
   color: #f1f1f1; /* Light text color */
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  /*overflow: hidden; !* Prevent scrolling *!*/
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper takes full viewport height */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Light Mode styles */
@@ -121,15 +140,6 @@ body.light-mode .night-mode-btn {
   margin-top: -20px; /* Reduce space between name and subtitle */
 }
 
-/* Ensure html and body take full height */
-html, body {
-  height: 100%;
-  margin: 0; /* Remove default margin */
-  overflow: hidden; /* Prevent scrolling */
-  display: flex;
-  flex-direction: column;
-}
-
 /* Ensure the header, content, and footer (if any) fill the screen */
 .header-content {
   flex: 0 1 auto; /* Adjust header size as needed */
@@ -144,15 +154,14 @@ html, body {
 
 /* Footer stays at the bottom */
 footer {
-  position: absolute; /* Positioned at the bottom */
-  bottom: 0;
-  left: 0;
+  position: relative; /* Positioned at the bottom */
   width: 100%;
-  background-color: #121212;
-  color: white;
+  /*background-color: #121212;
+  color: white;*/
   text-align: center;
-  padding: 2px 0;
+  /*padding: 2px 0;*/
   font-size: 15px; /* Optional: Adjust font size for a smaller appearance */
+  padding: 1rem;
 }
 
 /* Style the top section */
@@ -163,18 +172,6 @@ footer {
   margin-left: 175px;
   margin-right: auto;
   transition: background-color 0.3s;
-}
-
-/* Light mode styling (default) */
-body.light-mode .top-section {
-  background-color: #fff; /* Light background */
-  color: #333; /* Dark text for readability */
-}
-
-/* Dark mode styling */
-body.dark-mode .top-section {
-  background-color: #121212;
-  color: #e0e0e0;
 }
 
 /* Bottom section with two columns */
@@ -201,13 +198,6 @@ body.dark-mode .top-section {
 /*Text Color of my-list items*/
 body.dark-mode .my-list {
   color: #e0e0e0;
-}
-
-/* Dark mode styling */
-body.dark-mode .rcolumn,
-body.dark-mode .lcolumn,
-body.dark-mode .column {
-  background-color: #121212;
 }
 
 /* Changing h3 and p colors in darkmode to something less white*/

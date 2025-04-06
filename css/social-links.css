@@ -66,12 +66,12 @@
 /* GitHub icon color in both light and dark modes */
 .social-links a[href*="github.com"] {
     color: #f1f1f1; /* Light color for GitHub icon */
-    transition: color 0.15s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 body.light-mode .social-links a[href*="github.com"] {
     color: #333; /* Dark color for GitHub icon in dark mode */
-    transition: color 0.15s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 body.light-mode .social-links a[href*="github.com"]:hover {

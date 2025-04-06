@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<!--TODO absolutely no mobile scaling atm, I shall fix that somehow...-->
 <body class="dark-mode">
+<div class="page-wrapper">
 <header>
 	<div class="header-content">
 		<!-- Night Mode Toggle Button -->
@@ -68,8 +69,6 @@
 			<a href="#talks">Talks</a>
 		</nav>
 
-		<!-- TODO Dark mode text color should be not white but lightgrey and be set by the button everywhere or implemented for all text related things? -->
-<!--		Todo in dark mode my name color is werid, generally find a better color for text in dark mode...-->
 		<!-- Home Section -->
 		<section id="home" class="tab-content active">
 			<!-- Top Section: Full width -->
@@ -171,9 +170,9 @@
 
 		<section id="talks" class="tab-content">
 			<h1> This is work in progress...</h1>
-			<!-- TODO Need to make this list look all nice and similar to the other ones -->
 <!--			<h2>Slides & PDFs</h2>-->
-<!--			<p>Here is a collection of talks I gave in the past:</p>-->
+			<!-- TODO Need to make this list look all nice and similar to the other ones -->
+			<!--			<p>Here is a collection of talks I gave in the past:</p>-->
 <!--			<ul class="pdf-list">-->
 <!--				<li class="pdf-item" data-pdf="assets/pdfs/kaikoura.pdf">-->
 <!--					<a href="assets/pdfs/kaikoura.pdf" target="_blank" class="pdf-link">-->
@@ -202,5 +201,6 @@
 	<script src="js/orcid.js"></script>
 	<script src="js/control-tab-switch.js"></script>
 	<script src="js/night-mode.js"></script>
+</div>
 </body>
 </html>
