@@ -1,0 +1,54 @@
+/* Left panel: Circular image and title */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    /*border-right: 2px solid #ddd; !* Divider between left and right *!*/
+    transition: background-color 0.3s;
+}
+
+
+.left-panel h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Light mode styling (default) */
+body.light-mode .left-panel {
+    background-color: #fff; /* Light background */
+    color: #333; /* Dark text for readability */
+}
+
+/*!* Dark mode styling *!*/
+/*body.dark-mode .left-panel {*/
+/*  background-color: #121212; !* Dark background *!*/
+/*  color: #fff; !* White text for readability *!*/
+/*}*/
+
+.left-panel-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center; /* Center align the links */
+}
+
+.left-panel-links li {
+    margin: 5px 0;
+}
+
+.left-panel-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px; /* Increase font size */
+    font-weight: 500; /* Optional: Make it slightly bolder */
+    transition: color 0.3s ease-in-out;
+}
+
+.left-panel-links a:hover {
+    color: #0056b3;
+}
+

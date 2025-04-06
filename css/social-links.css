@@ -1,0 +1,125 @@
+.social-links {
+    justify-content: center; /* Horizontally center the entire list */
+    align-items: center; /* Vertically center the list */
+    flex-direction: column; /* Stack the grid items vertically */
+    /*height: 100%; !* Ensure the container fills the available space *!*/
+    gap: 30px;
+    font-size: 30px; /* Increase the size of the icons */
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 15px; /* Adds space around the icon */
+    display: inline-block; /* Ensures the padding works properly */
+    border-radius: 50%; /* Circular hover box around icons */
+}
+
+.social-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2x2 grid */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-items: center; /* Centers items in grid cells */
+}
+
+.social-links li {
+    display: flex;
+    justify-content: center; /* Center icon inside each list item */
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 50px;
+    color: #333;
+    padding: 5px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links i {
+    /*margin-right: 6px;
+    width: 24px;
+    height: 24px;*/
+    padding: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Email (Red) */
+.social-links a[href^="mailto"] i {
+    color: #D44638;
+}
+
+.social-links a[href^="mailto"]:hover {
+    background: rgba(212, 70, 56, 0.2);
+    box-shadow: 0 0 6px rgba(212, 70, 56, 0.3);
+}
+
+.social-links a[href^="mailto"]:hover i {
+    color: #B23121;
+    transform: scale(1.2);
+}
+
+/* GitHub icon color in both light and dark modes */
+.social-links a[href*="github.com"] {
+    color: #f1f1f1; /* Light color for GitHub icon */
+    transition: color 0.15s ease-in-out;
+}
+
+body.light-mode .social-links a[href*="github.com"] {
+    color: #333; /* Dark color for GitHub icon in dark mode */
+    transition: color 0.15s ease-in-out;
+}
+
+body.light-mode .social-links a[href*="github.com"]:hover {
+    background: rgba(23, 21, 21, 0.1);
+    box-shadow: 0 0 6px rgba(23, 21, 21, 0.3);
+}
+
+body.light-mode .social-links a[href*="github.com"]:hover i {
+    color: #333;
+    transform: scale(1.2);
+}
+
+.social-links a[href*="github.com"]:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.social-links a[href*="github.com"]:hover i {
+    color: #f1f1f1;
+    transform: scale(1.2);
+}
+
+/* Google Scholar (Blue) */
+.social-links a[href*="scholar.google.com"] i {
+    color: #4285F4;
+}
+
+.social-links a[href*="scholar.google.com"]:hover {
+    background: rgba(66, 133, 244, 0.2);
+    box-shadow: 0 0 6px rgba(66, 133, 244, 0.3);
+}
+
+.social-links a[href*="scholar.google.com"]:hover i {
+    color: #2a65d3;
+    transform: scale(1.2);
+}
+
+/* ORCID (Green) */
+.social-links a[href*="orcid.org"] i {
+    color: #A6CE39;
+}
+
+.social-links a[href*="orcid.org"]:hover {
+    background: rgba(166, 206, 57, 0.2);
+    box-shadow: 0 0 6px rgba(166, 206, 57, 0.3);
+}
+
+.social-links a[href*="orcid.org"]:hover i {
+    color: #7BAA32;
+    transform: scale(1.2);
+}

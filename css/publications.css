@@ -1,0 +1,90 @@
+#publications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Alternate shading for blocks light-mode*/
+body.light-mode .publication:nth-child(odd) {
+    background-color: #f1f1f1; /* Slightly darker shade for contrast */
+}
+
+/* Alternate shading for blocks dark-mode*/
+body.dark-mode .publication:nth-child(odd) {
+    background-color: #2c2c2c; /* Slightly darker shade for contrast */
+}
+
+/* Light mode styling (default) */
+body.light-mode .publication {
+    background-color: #fff; /* Light background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Dark mode styling */
+body.dark-mode .publication {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text for readability */
+}
+
+/* Style the publication container */
+.publication {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Flexbox for layout */
+.publication-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Icon as a clickable link */
+.publication-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 30px; /* Adjust the icon size */
+    color: #555;
+    transition: color 0.2s ease, transform 0.2s ease;
+    height: 100%;
+    text-decoration: none; /* Remove the underline */
+    border: 2px solid transparent; /* Optional: Adjust border */
+    padding: 20px;
+}
+
+.publication-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s ease;
+    vertical-align: center;
+}
+
+/* On hover, scale the icon */
+.publication-icon-link:hover {
+    transform: scale(1.5);
+}
+
+/* Details container */
+.publication-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the title */
+.publication strong {
+    font-size: 1.2rem;
+}
+
+/* Journal and date */
+.publication em {
+    color: #777;
+    font-size: 0.95rem;
+}

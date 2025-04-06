@@ -1,0 +1,64 @@
+/* Style the software section */
+#software {
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+#software h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.software-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.software-item {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.software-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.software-link i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #007bff; /* Icon color */
+}
+
+.software-item:hover {
+    background-color: #ddd;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.software-item:hover .software-link {
+    color: #007bff; /* Change link color on hover */
+    transform: scale(1.02);
+}
+
+/* Light mode styling (default) */
+body.light-mode .software-link {
+    color: #333; /* Dark text for readability */
+}
+
+/* Dark mode styling */
+body.dark-mode .software-link {
+    color: #ddd; /* White text for readability */
+}
