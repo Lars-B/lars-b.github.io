@@ -1,0 +1,70 @@
+/* Style the top section */
+.top-section {
+    width: 96.4%;  /* todo this is a ridiculous fix... */
+    padding: 20px;
+    text-align: left;
+    margin-left: 175px;
+    margin-right: auto;
+    transition: background-color 0.3s;
+}
+
+/* Bottom section with two columns */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lcolumn {
+    width: 45%; /* Adjust the width of each column */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.rcolumn {
+    width: 45%; /* Adjust the width of each column */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+/* Right panel: Sections (Home, About, CV) */
+.right-panel {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Tab content styling */
+.tab-content {
+    display: none; /* Hide all sections by default */
+}
+
+.tab-content.active {
+    display: block; /* Show active section */
+}
+
+/* This is just for 'Postdoctoral fellow' below my name...*/
+.subtitle {
+    font-size: 0.875rem; /* 14px = 0.875rem assuming root font size is 16px */
+    font-weight: 500;
+    color: #666;
+    margin-top: -1.5em; /* negative spacing relative to font size */
+}
+
+.info-list {
+    font-size: 1rem; /* 1rem = 16px by default, scalable based on the root font size */
+    line-height: 1.6; /* Relative to the font size */
+    max-width: 100%;
+    padding-left: 1.25rem; /* 1.25 * 16px = 20px, relative padding */
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .info-list {
+        color: violet;
+        background-color: green;
+        font-size: 0.875rem; /* Smaller font size on mobile */
+        padding-left: 1rem; /* Adjust padding for smaller screens */
+    }
+}

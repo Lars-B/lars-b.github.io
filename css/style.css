@@ -4,21 +4,22 @@
 @import url('./social-links.css');
 @import url('./publications.css');
 @import url('./software.css');
+@import url('./main-page.css');
 
 /* Todo try to use %/rem/vw/vh instead of px
     For more mobile support I could add @media tags too...*/
 
+/* Ensure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
-  margin-top: 50px;
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 50px;
-}
-
-embed {
-  border: 0;
+  flex: 1;
+  /*margin-top: 5vh;*/
 }
 
 header {
@@ -26,24 +27,15 @@ header {
   display: flex; /* Make header a flex container */
   justify-content: space-between; /* Space out items */
   align-items: center; /* Vertically center the content */
-  padding: 20px;
+  padding: 2vw;  /* Padding between nav and rest of page, 2% viewport height*/
   flex-wrap: wrap; /* Allow wrapping */
 }
 
 /* Set default theme to Dark Mode */
 body {
   background-color: #121212; /* Dark background */
-  color: #f1f1f1; /* Light text color */
+  color: #e0e0e0; /* Light text color */
   transition: all 0.3s ease-in-out;
-}
-
-/* Ensure html and body take full height */
-html, body {
-  height: 100%;
-  margin: 0; /* Remove default margin */
-  /*overflow: hidden; !* Prevent scrolling *!*/
-  display: flex;
-  flex-direction: column;
 }
 
 /* Wrapper takes full viewport height */
@@ -62,34 +54,21 @@ body.light-mode {
 
 /* Position the night mode button on the right */
 .night-mode-btn {
-  position: absolute;
+  position: fixed;
   top: 10px; /* Adjust as needed */
   right: 10px; /* Adjust as needed */
   background: none;
   border: none;
   color: #f1f1f1;
-  font-size: 24px;
+  font-size: 2vw;
   cursor: pointer;
   transition: color 0.3s ease;
   margin-left: 20px;
+  z-index: 9999; /* Make sure it stays on top of other content */
 }
 
 .night-mode-btn:hover {
   transform: scale(1.1); /* Slight hover effect */
-}
-
-/* Ensure the night mode button and social links don't overlap */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap; /* Allow wrapping */
-}
-
-/* Adjust the header content, ensuring proper alignment of title and icons */
-header .header-content h1 {
-  margin: 0; /* Remove any default margin from the header */
 }
 
 /* Change color when in light mode */
@@ -110,119 +89,20 @@ body.light-mode .night-mode-btn {
 }
 
 .profile-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%; /* Circular image */
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: right 40%; /* Shift image to the right */
-  margin-bottom: 10px;
-}
-
-/* Right panel: Sections (Home, About, CV) */
-.right-panel {
-  padding: 20px;
-  overflow-y: auto;
-}
-
-/* Tab content styling */
-.tab-content {
-  display: none; /* Hide all sections by default */
-}
-
-.tab-content.active {
-  display: block; /* Show active section */
-}
-
-.subtitle {
-  font-size: 14px;
-  font-weight: 500;
-  color: #666;
-  margin-top: -20px; /* Reduce space between name and subtitle */
-}
-
-/* Ensure the header, content, and footer (if any) fill the screen */
-.header-content {
-  flex: 0 1 auto; /* Adjust header size as needed */
-}
-
-/* Main content takes available space but doesn't overflow */
-.main-content {
-  flex: 1; /* Takes the remaining space in the page */
-  padding: 20px; /* Add some padding for spacing */
-  overflow-y: auto; /* Allows the content area to scroll if needed */
+  object-position: right 40%;
+  flex-shrink: 0;
 }
 
 /* Footer stays at the bottom */
 footer {
   position: relative; /* Positioned at the bottom */
   width: 100%;
-  /*background-color: #121212;
-  color: white;*/
   text-align: center;
-  /*padding: 2px 0;*/
-  font-size: 15px; /* Optional: Adjust font size for a smaller appearance */
-  padding: 1rem;
+  /*padding: 1vh;*/
 }
-
-/* Style the top section */
-.top-section {
-  width: 96.4%;  /* todo this is a ridiculous fix... */
-  padding: 20px;
-  text-align: left;
-  margin-left: 175px;
-  margin-right: auto;
-  transition: background-color 0.3s;
-}
-
-/* Bottom section with two columns */
-.bottom-section {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.lcolumn {
-  width: 45%; /* Adjust the width of each column */
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-}
-
-.rcolumn {
-  width: 45%; /* Adjust the width of each column */
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-}
-
-/*Text Color of my-list items*/
-body.dark-mode .my-list {
-  color: #e0e0e0;
-}
-
-/* Changing h3 and p colors in darkmode to something less white*/
-body.dark-mode h3,
-body.dark-mode p {
-  color: #e0e0e0;
-}
-
-
-/* Optional: Style headers within each section */
-h3 {
-  color: #333;
-  font-size: 1.5rem;
-}
-
-p {
-  color: #666;
-  font-size: 1rem;
-}
-
-.my-list {
-  font-size: 1.2em;
-  line-height: 1.6;
-  max-width: 100%;
-  padding-left: 20px;
-  margin-top: 0;
-}
-
