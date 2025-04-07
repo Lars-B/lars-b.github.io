@@ -23,8 +23,10 @@
 	<!-- Left Panel: Circular image and title -->
 	<div class="left-panel">
 		<img src="assets/images/PicLB.jpg" alt="Lars Berling" class="profile-image">
-		<h3>Lars Berling</h3>
-		<p class="subtitle">Postdoctoral Fellow</p> <!-- Subtitle -->
+		<div class="name-block">
+			<h3>Lars Berling</h3>
+			<p class="subtitle">Postdoctoral Fellow</p>
+		</div>
 
 		<ul class="left-panel-links">
 			<li><a href="https://www.sfu.ca" target="_blank">Simon Fraser University</a></li>
@@ -70,8 +72,7 @@
 
 		<!-- Home Section -->
 		<section id="home" class="tab-content active">
-			<!-- Top Section: Full width -->
-			<div class="top-section">
+			<div class="main-section">
 				<h2>Welcome to my website!</h2>
 				<p>Thanks for stopping by. Take a look around and learn more about me and what I do.</p>
 				<p>
@@ -82,30 +83,25 @@
 				</p>
 			</div>
 
-			<!-- Bottom Section: Two columns -->
-			<div class="bottom-section">
-				<!-- Left Column: Interests and Areas of Study -->
-				<div class="lcolumn" id="interests">
-					<h3>Interests and Areas of Study</h3>
+			<div class="main-section">
+				<h3>Interests and Areas of Study</h3>
 					<ul class="info-list">
 						<li>Phylogenetic trees and metrics</li>
 						<li>MCMC convergence assessment</li>
 						<li>Phylogenetic inference</li>
 						<li>Computational Biology</li>
 					</ul>
-				</div>
-
-				<!-- Right Column: Short CV -->
-				<div class="rcolumn" id="cv">
-					<h3>Short CV</h3>
+			</div>
+			<div class="main-section">
+				<h3>Short CV</h3>
 					<ul class="info-list">
 <!--						Todo add links to universities and biomaths, maybe thesis advisors and biods lab?-->
-						<li>Post-doctoral fellow, Magpie Group, Simon Fraser University, Canada (2025-...)</li>
-						<li>PhD, Mathematics, University of Canterbury, New Zealand (2021-2024)</li>
-						<li>Master of Science, Biomathematics, University of Greifswald, Germany (...-2021)</li>
-						<li>Bachelor of Science, Biomathematics, University of Greifswald, Germany (2014-2017)</li>
+						<li>Post-doctoral fellow, <a class="mylink", href="https://www.sfu.ca/magpie.html">Magpie Group</a>, Simon Fraser University, Canada (2025-...)</li>
+						<li>PhD, <a class="mylink" href="https://www.canterbury.ac.nz/study/academic-study/engineering/schools-and-departments-engineering-forestry-product-design/school-of-mathematics-and-statistics">Mathematics</a>, University of Canterbury, New Zealand (2021-2024)</li>
+						<li>Master of Science, <a class="mylink" href="https://mnf.uni-greifswald.de/en/student-portal/mint-compartments-in-greifswald/biomathematics/" target="_blank">Biomathematics</a>, University of Greifswald, Germany (...-2021)</li>
+						<li>Bachelor of Science, <a class="mylink" href="https://mnf.uni-greifswald.de/en/student-portal/mint-compartments-in-greifswald/biomathematics/" target="_blank">Biomathematics</a>, University of Greifswald, Germany (2014-2017)</li>
 					</ul>
-				</div>
+
 			</div>
 		</section>
 		<section id="software" class="tab-content">

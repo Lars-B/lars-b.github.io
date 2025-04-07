@@ -2,7 +2,6 @@
     justify-content: center; /* Horizontally center the entire list */
     align-items: center; /* Vertically center the list */
     flex-direction: column; /* Stack the grid items vertically */
-    /*height: 100%; !* Ensure the container fills the available space *!*/
     gap: 30px;
     font-size: 30px; /* Increase the size of the icons */
     list-style: none;
@@ -39,9 +38,6 @@
 }
 
 .social-links i {
-    /*margin-right: 6px;
-    width: 24px;
-    height: 24px;*/
     padding: 5px;
     display: inline-block;
     border-radius: 50%;

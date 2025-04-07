@@ -6,9 +6,6 @@
 @import url('./software.css');
 @import url('./main-page.css');
 
-/* Todo try to use %/rem/vw/vh instead of px
-    For more mobile support I could add @media tags too...*/
-
 /* Ensure html and body take full height */
 html, body {
   height: 100%;
@@ -60,7 +57,7 @@ body.light-mode {
   background: none;
   border: none;
   color: #f1f1f1;
-  font-size: 2vw;
+  font-size: clamp(1.2rem, 2.5vw, 2rem); /*scales font size: (min, max, won't go past)*/
   cursor: pointer;
   transition: color 0.3s ease;
   margin-left: 20px;

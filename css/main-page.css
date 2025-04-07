@@ -1,32 +1,10 @@
-/* Style the top section */
-.top-section {
-    width: 96.4%;  /* todo this is a ridiculous fix... */
-    padding: 20px;
+/* Style the main sections of main home */
+.main-section {
+    width: 94%;
+    margin-left: 5vw;
     text-align: left;
-    margin-left: 175px;
-    margin-right: auto;
     transition: background-color 0.3s;
-}
-
-/* Bottom section with two columns */
-.bottom-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.lcolumn {
-    width: 45%; /* Adjust the width of each column */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-}
-
-.rcolumn {
-    width: 45%; /* Adjust the width of each column */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+    padding-bottom: 3vh;
 }
 
 /* Right panel: Sections (Home, About, CV) */
@@ -44,12 +22,23 @@
     display: block; /* Show active section */
 }
 
-/* This is just for 'Postdoctoral fellow' below my name...*/
-.subtitle {
-    font-size: 0.875rem; /* 14px = 0.875rem assuming root font size is 16px */
+.name-block {
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Controls overall scaling */
+    line-height: 1.2;
+    text-align: center;
+}
+
+.name-block h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.name-block .subtitle {
+    font-size: 0.875em; /* Relative to container */
     font-weight: 500;
-    color: #666;
-    margin-top: -1.5em; /* negative spacing relative to font size */
+    color: #666; /* Text color for Postdoctoral Fellow under my name permanently light grey*/
+    margin-top: -0.3em; /* Adjust vertical spacing */
 }
 
 .info-list {
@@ -58,6 +47,12 @@
     max-width: 100%;
     padding-left: 1.25rem; /* 1.25 * 16px = 20px, relative padding */
     margin-top: 0;
+}
+
+/* This is for links to unis in the short cv list */
+.mylink {
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
