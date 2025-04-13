@@ -37,7 +37,8 @@ body {
 
 /* Wrapper takes full viewport height */
 .page-wrapper {
-  min-height: 100vh;
+  height: 100vh;
+  /*min-height: 95vh;*/
   display: flex;
   flex-direction: column;
 }
@@ -82,7 +83,7 @@ body.light-mode .night-mode-btn {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr; /* Left: 1/4, Right: 3/4 */
-  height: 100vh; /* Full viewport height */
+  height: 85vh;
 }
 
 .profile-image {
