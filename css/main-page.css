@@ -1,7 +1,6 @@
 /* Style the main sections of main home */
 .main-section {
-    width: 94%;
-    margin-left: 5vw;
+    width: 90%;
     text-align: left;
     transition: background-color 0.3s;
     padding-bottom: 3vh;
@@ -9,7 +8,9 @@
 
 /* Right panel: Sections (Home, About, CV) */
 .right-panel {
-    padding: 20px;
+    /*padding: 100px;*/
+    padding-top: 1vh;
+    padding-bottom: 5vh;
     overflow-y: auto;
 }
 

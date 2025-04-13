@@ -1,15 +1,15 @@
 /* Left panel: Circular image and title */
 .left-panel {
+    transition: background-color 0.3s;
+    flex: 0.9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 2vh;
-    transition: background-color 0.3s;
 }
 
 .left-panel h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 }
@@ -28,9 +28,8 @@
 .left-panel-links a {
     text-decoration: none;
     color: #007bff;
-    /*font-size: 16px; !* Increase font size *!*/
     font-size: clamp(1rem, 2vw, 1.3rem);
-    font-weight: 500; /* Optional: Make it slightly bolder */
+    font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
@@ -38,3 +37,8 @@
     color: #0056b3;
 }
 
+footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}

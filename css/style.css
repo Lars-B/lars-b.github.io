@@ -8,15 +8,14 @@
 
 /* Ensure html and body take full height */
 html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
   height: 100%;
-  margin: 0; /* Remove default margin */
-  display: flex;
-  flex-direction: column;
 }
 
 .main {
   flex: 1;
-  /*margin-top: 5vh;*/
 }
 
 header {
@@ -37,10 +36,9 @@ body {
 
 /* Wrapper takes full viewport height */
 .page-wrapper {
-  height: 100vh;
-  /*min-height: 95vh;*/
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Light Mode styles */
@@ -83,7 +81,6 @@ body.light-mode .night-mode-btn {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr; /* Left: 1/4, Right: 3/4 */
-  height: 85vh;
 }
 
 .profile-image {
@@ -95,12 +92,4 @@ body.light-mode .night-mode-btn {
   object-fit: cover;
   object-position: right 40%;
   flex-shrink: 0;
-}
-
-/* Footer stays at the bottom */
-footer {
-  position: relative; /* Positioned at the bottom */
-  width: 100%;
-  text-align: center;
-  /*padding: 1vh;*/
 }
