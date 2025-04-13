@@ -1,43 +1,33 @@
-/* Style the software section */
-#software {
-    margin-top: 40px;
-    font-family: Arial, sans-serif;
-}
-
-#software h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
 .software-list {
-    list-style-type: none;
-    padding: 0;
+    padding-left: 0.5rem;
     margin: 0;
 }
 
 .software-item {
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    border: .1rem solid #ddd;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .software-link {
-    display: flex;
+    padding: 0.625rem 1rem;
     align-items: center;
     text-decoration: none;
-    color: #333;
     font-size: 1.1rem;
     flex-grow: 1;
-    width: 100%;
+    transition: color 0.3s ease;
 }
 
+/* Icon of the link */
 .software-link i {
-    margin-right: 10px;
+    margin-right: .5vw;
+    margin-left: .5vw;
     font-size: 1.5rem;
     color: #007bff; /* Icon color */
 }
@@ -46,11 +36,11 @@
     background-color: #ddd;
     transform: scale(1.02);
     transition: all 0.3s ease;
+    border-radius: 1rem;
 }
 
 .software-item:hover .software-link {
-    color: #007bff; /* Change link color on hover */
-    transform: scale(1.02);
+    color: #007bff;
 }
 
 /* Light mode styling (default) */
